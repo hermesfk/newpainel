@@ -1,37 +1,65 @@
+<?php
+foreach ($dados as $dado) {
+    ?>
 
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="m-0">Detalhes do produto</h1>
-                </div><!-- /.col -->
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Detalhes do produtos</li>
-                    </ol> 
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
+    <!-- Content Wrapper. Contains page content -->
+
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Blank Page</h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Blank Page</li>
+                        </ol>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+            <!-- Default box -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title"><?php echo $dado['nome']; ?></h3>
+
+
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="">Nome Produto</label>
+                        <input type="text" disabled="" value="<?php echo $dado['nome']; ?>"  class="input-block-level">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Tipo:</label>
+                        <input type="text" disabled="" value="<?php echo $dado['tipo']; ?>"  class="input-block-level">
+                    </div>
+                    <div class="form-group">
+                        <label for="">valor:</label>
+                        <input type="text" disabled="" value="<?php echo $dado['valor']; ?>" class="input-block-level">
+                    </div>
+                </div>  <div class="card-footer">
+                    <a href="?pg=produtos" class="btn btn-success btn-lg">Voltar</a>
+                    <a href="?pg=produtos-editar&id=<?php echo $dado['id']; ?>" class="btn btn-success btn-lg">Voltar</a>
+                </div>
+            </div>
+            <!-- /.card-body -->
+
+            <!-- /.card-footer-->
+
+            <!-- /.card -->
+        </section>
+
+        <!-- /.content -->
     </div>
-    <!-- /.content-header -->
+    <!-- /.content-wrapper -->
 
-    <!-- Main content -->
-    <section class="content">
-        <div class="container-fluid">
-
-            <?php
-            foreach ($dados as $dado) {
-
-                echo $dado['nome'];
-            }
-            ?>
-
-        </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
+<?php } ?>
