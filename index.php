@@ -10,6 +10,7 @@ if ($pg) {
     switch ($_GET['pg']) {
 
 
+        
         case 'inicio':
             include_once 'painel/paginas/includes/header.php';
             include_once 'painel/paginas/includes/menus.php';
@@ -254,8 +255,19 @@ if ($pg) {
             break;
     }
 } else {
-    //não existe
-    include_once 'painel/paginas/dashboard.php';
+    //executar os arquivos da pagina inicial do site
+    //Header
+    //Navegação
+    //Página em questão
+    //Footer
+                    
+            include_once 'site/includes/header.php';                      
+            include_once 'site/paginas/inicio.php';
+            include_once 'site/includes/footer.php';
+            
+            
+            
+    
 }
 
 
