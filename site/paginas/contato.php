@@ -1,4 +1,4 @@
-    <h2 class="h1 mb-3 bg-secondary text-white text-center">Contato</h2>
+    <h2 class="h1 mb-3 alert-secondary  d-block  text-center m-2">Contato</h2>
 
     <main class="row container-fluid m-0">
         <form class="row col-md form-group m-0 mb-3 border border-dark p-3" action="">
@@ -42,6 +42,6 @@
         </form>
 
         <div class="col-md m-0 mb-3 p-0 pl-md-2">
-            <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4700.674996438752!2d-72.25707312531969!3d7.813018085746683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sve!4v1596996700500!5m2!1ses!2sve"></iframe>
+            <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d987.8738529251527!2d-34.89042294068167!3d-7.947646439775531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssenac!5e0!3m2!1spt-BR!2sbr!4v1612879495815!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </main>
