@@ -10,7 +10,7 @@
     <header>            
         <!--barra de navegação-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">INICIO</a>
+            <a class="navbar-brand" href="?pg=inicio-site">INICIO</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -18,13 +18,13 @@
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">SOBRE <span class="sr-only">(página atual)</span></a>
+                        <a class="nav-link" href="?pg=sobre-site">SOBRE <span class="sr-only">(página atual)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?pg=produtos-site">PRODUTOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SERVIÇOS</a>
+                        <a class="nav-link" href="?pg=servico-site">SERVIÇOS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?pg=contato-site">CONTATO</a>

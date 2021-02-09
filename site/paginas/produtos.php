@@ -1,54 +1,28 @@
-<h1 class="text-center p-3">PAGINAS DE VENDA!</h1>
+<main class="container-fluid p-1">
+    <h2 class="text-center p-2 bg-secondary text-white">Produtos</h2>
+    <div class="row">
+        <section class="row col-md-6 m-0">
+            <img class="col-md-6 img-fluid" src="https://cdn.pixabay.com/photo/2017/06/19/18/44/t-shirt-2420558_960_720.png" alt="Producto1" />
+            <div class="col-md-6">
+                <h3 class="h1">Produtos</h3>
+                <span class="font-weight-bold">Precio: 1000,00 Bs</span>
+                <p class="text-justify">
+                    Praesent ac felis nec enim aliquam molestie. Suspendisse potenti. Morbi congue finibus diam, a aliquet nisi semper placerat. Aliquam finibus massa id ligula tincidunt tempor. Cras finibus dolor vel arcu hendrerit egestas. Aliquam erat volutpat. Nulla
+                    ac libero nisl. Nullam congue ante sit amet neque facilisis, quis rutrum nisi iaculis.
+                </p>
+            </div>
+        </section>
 
-<div class="container mt-5">
-    <div class="card-columns">
-        <div class="card">
-            <img class="card-img-top" src="https://placehold.it/253x300" alt="Imagem de capa do card">
-            <div class="card-body">
-                <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-                <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+        <section class="row col-md-6 m-0">
+            <img class="col-md-6 img-fluid" src="https://cdn.pixabay.com/photo/2017/01/13/04/56/blank-1976334_640.png" alt="Producto2" />
+            <div class="col-md-6">
+                <h3 class="h1">Producto2</h3>
+                <span class="font-weight-bold">Precio: 1000,00 Bs</span>
+                <p class="text-justify">
+                    Aenean vel sapien et tortor euismod dapibus vitae sed ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec a ipsum mauris. Aliquam bibendum vulputate dignissim. Integer ut turpis tincidunt, rhoncus dui vitae, lobortis dui. Duis
+                    laoreet lacus mauris, vitae ornare erat maximus vitae.
+                </p>
             </div>
-        </div>
-        <div class="card p-3">
-            <blockquote class="blockquote mb-0 card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">
-                    <small class="text-muted">
-                        Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-                    </small>
-                </footer>
-            </blockquote>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="https://placehold.it/253x300" alt="Imagem de capa do card">
-            <div class="card-body">
-                <h5 class="card-title">Título do card</h5>
-                <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-            </div>
-        </div>
-        <div class="card bg-primary text-white text-center p-3">
-            <blockquote class="blockquote mb-0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                <footer class="blockquote-footer">
-                    <small>
-                        Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-                    </small>
-                </footer>
-            </blockquote>
-        </div>
-        <div class="card text-center">
-            <div class="card-body">
-                <h5 class="card-title">Título do card</h5>
-                <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img" src="https://placehold.it/253x300" alt="Imagem do card">
-        </div>
-       
+        </section>
     </div>
-
-
-</div> 
+</main>

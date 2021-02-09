@@ -13,6 +13,22 @@ if ($pg) {
         //inicio do site
         
         
+        case 'servico-site':
+            
+            include_once 'site/includes/header.php';
+            include_once 'site/paginas/navegação.php';
+            include_once 'site/paginas/servicos.php';
+            include_once 'site/includes/footer.php';
+            break;
+        
+        case 'sobre-site':
+            
+            include_once 'site/includes/header.php';
+            include_once 'site/paginas/navegação.php';
+            include_once 'site/paginas/sobre.php';
+            include_once 'site/includes/footer.php';
+            break;
+        
         case 'produtos-site':
             
             include_once 'site/includes/header.php';
@@ -25,8 +41,8 @@ if ($pg) {
             
             include_once 'site/includes/header.php';
             include_once 'site/paginas/navegação.php';
-            include_once '/site/paginas/inicio.php';
-            include_once '/site/includes/footer.php';
+            include_once 'site/paginas/inicio.php';
+            include_once 'site/includes/footer.php';
             break;
         
         case 'contato-site':
@@ -37,6 +53,7 @@ if ($pg) {
             include_once 'site/includes/footer.php';
             break;
         //final do site
+        
         case 'inicio':
             include_once 'painel/paginas/includes/header.php';
             include_once 'painel/paginas/includes/menus.php';
