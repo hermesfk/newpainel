@@ -10,7 +10,33 @@ if ($pg) {
     switch ($_GET['pg']) {
 
 
+        //inicio do site
         
+        
+        case 'produtos-site':
+            
+            include_once 'site/includes/header.php';
+            include_once 'site/paginas/navegação.php';
+            include_once 'site/paginas/produtos.php';
+            include_once 'site/includes/footer.php';
+            break;
+        
+        case 'inicio-site':
+            
+            include_once 'site/includes/header.php';
+            include_once 'site/paginas/navegação.php';
+            include_once '/site/paginas/inicio.php';
+            include_once '/site/includes/footer.php';
+            break;
+        
+        case 'contato-site':
+            
+            include_once 'site/includes/header.php';
+            include_once 'site/paginas/navegação.php';
+            include_once 'site/paginas/contato.php';
+            include_once 'site/includes/footer.php';
+            break;
+        //final do site
         case 'inicio':
             include_once 'painel/paginas/includes/header.php';
             include_once 'painel/paginas/includes/menus.php';

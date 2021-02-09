@@ -21,13 +21,13 @@
                         <a class="nav-link" href="#">SOBRE <span class="sr-only">(página atual)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PRODUTOS</a>
+                        <a class="nav-link" href="?pg=produtos-site">PRODUTOS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">SERVIÇOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTATO</a>
+                        <a class="nav-link" href="?pg=contato-site">CONTATO</a>
                     </li>
 
                 </ul>
