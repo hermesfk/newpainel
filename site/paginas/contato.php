@@ -1,10 +1,10 @@
     <h2 class="h1 mb-3 alert-secondary  d-block  text-center m-2">Contato</h2>
 
     <main class="row container-fluid m-0">
-        <form class="row col-md form-group m-0 mb-3 border border-dark p-3" action="">
+        <form class="row col-md form-group m-0 mb-3 border border-dark p-3" action="?pg=contato-site" method="POST">
             <div class="col-md-6">
                 <label class="d-block font-weight-bolder" for="nombre">Nome:</label>
-                <input class="w-100 bg-light" type="text" name="nombre" id="nombre" placeholder="Nombre" />
+                <input class="w-100 bg-light" type="text" name="nome" id="nombre" placeholder="Nombre" />
             </div>
            
 
@@ -13,13 +13,13 @@
                 <p class="font-weight-bolder">Genero:</p>
                 <div class="form-check form-check-inline">
                     <label class="m-0 mr-2" for="hombre">Homem</label>
-                    <input type="radio" name="genero" id="hombre" />
+                    <input type="radio" name="id" id="hombre" />
 
                     <label class="m-0 mr-2 ml-2" for="mujer">Mulher</label>
-                    <input type="radio" name="genero" id="mujer" />
+                    <input type="radio" name="id" id="mujer" />
 
                     <label class="m-0 mr-2 ml-2" for="otro">Outro</label>
-                    <input type="radio" name="genero" id="otro" />
+                    <input type="radio" name="id" id="otro" />
                 </div>
             </div>
 
@@ -36,7 +36,7 @@
 
             <div class="col-12">
                 <label class="d-block font-weight-bolder" for="solicitud">Messangem:</label>
-                <textarea class="w-100 bg-light" name="solicitud " id="solicitud"></textarea>
+                <textarea class="w-100 bg-light" name="msg" id="solicitud"></textarea>
             </div>
             <input class="btn btn-dark font-weight-bolder m-auto" type="submit" value="Enviar" class="boton" />
         </form>

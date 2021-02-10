@@ -11,49 +11,76 @@ if ($pg) {
 
 
         //inicio do site
-        
-        
+
+
         case 'servico-site':
-            
+
             include_once 'site/includes/header.php';
             include_once 'site/paginas/navegação.php';
             include_once 'site/paginas/servicos.php';
             include_once 'site/includes/footer.php';
             break;
-        
+
         case 'sobre-site':
-            
+
             include_once 'site/includes/header.php';
             include_once 'site/paginas/navegação.php';
             include_once 'site/paginas/sobre.php';
             include_once 'site/includes/footer.php';
             break;
-        
+
         case 'produtos-site':
-            
+
             include_once 'site/includes/header.php';
             include_once 'site/paginas/navegação.php';
             include_once 'site/paginas/produtos.php';
             include_once 'site/includes/footer.php';
             break;
-        
+
         case 'inicio-site':
-            
+
             include_once 'site/includes/header.php';
             include_once 'site/paginas/navegação.php';
             include_once 'site/paginas/inicio.php';
             include_once 'site/includes/footer.php';
             break;
-        
+
         case 'contato-site':
-            
+
             include_once 'site/includes/header.php';
             include_once 'site/paginas/navegação.php';
-            include_once 'site/paginas/contato.php';
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+                //Pegando as variáveis via POST
+                $nome = $_POST['nome'];
+                $email = $_POST['email'];
+                $msg = $_POST['msg'];
+
+                //Tratar os dados enviados via POST
+                $parametros = array(''
+                    . ':nome' => $nome,
+                    ':email' => $email,
+                    ':msg' => $msg
+                );
+
+                $resultDados = new Conexao();
+                $resultDados->intervencaoNoBanco('INSERT INTO '
+                        . 'contato (nome, email, msg) '
+                        . 'VALUES (:nome, :email, :msg)', $parametros);
+
+                include_once 'site/paginas/contato.php';
+            } else {
+                include_once 'site/includes/header.php';
+                include_once 'site/paginas/navegação.php';
+                include_once 'site/paginas/contato.php';
+            }
             include_once 'site/includes/footer.php';
             break;
+
+
+
         //final do site
-        
+
         case 'inicio':
             include_once 'painel/paginas/includes/header.php';
             include_once 'painel/paginas/includes/menus.php';
@@ -231,7 +258,7 @@ if ($pg) {
                         . 'WHERE id = :id', $parametros);
 
                 include_once 'painel/paginas/servicos-editar.php'
-                . '';
+                        . '';
             } else {
                 //mostrar os dados do produto
                 $idProdutoEditar = isset($_GET['id']);
@@ -276,6 +303,17 @@ if ($pg) {
             include_once 'painel/paginas/includes/footer.php';
             break;
 
+        case'contato-excluir':
+
+            $parametros = array(
+                ':id' => $_GET['id'],
+            );
+            $resultDados = new Conexao();
+            $resultDados->intervencaoNoBanco(''
+                    . 'DELETE FROM contato WHERE id = :id', $parametros);
+            header('Location: ?pg=contato');
+            break;
+
         case 'login':
             include_once 'painel/paginas/acesso/login.php';
             break;
@@ -303,14 +341,10 @@ if ($pg) {
     //Navegação
     //Página em questão
     //Footer
-                    
-            include_once 'site/includes/header.php';                      
-            include_once 'site/paginas/inicio.php';
-            include_once 'site/includes/footer.php';
-            
-            
-            
-    
+
+    include_once 'site/includes/header.php';
+    include_once 'site/paginas/inicio.php';
+    include_once 'site/includes/footer.php';
 }
 
 
